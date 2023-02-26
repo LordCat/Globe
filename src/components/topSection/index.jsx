@@ -1,5 +1,10 @@
 import React from "react";
+import { BrowserRouter } from "react-router-dom";
 import styled from "styled-components";
+import { NavBar } from "../NavBar/NavBar";
+import { Routes, Route } from "react-router-dom";
+import { Home } from "../../pages/home";
+import { About } from "../../pages/about";
 
 const TopSectionContainer = styled.div`
   position: absolute;
@@ -37,6 +42,13 @@ const Paragraph = styled.p`
 export function TopSection() {
   return (
     <TopSectionContainer>
+    <BrowserRouter>
+    <NavBar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+          </Routes>
+      </BrowserRouter>
       <Logo>Welcome to my Website</Logo>
       <Paragraph>
         This is a website I made to learn React and Three.js and it is taking for ever to correctl render this planet
