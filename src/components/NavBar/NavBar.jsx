@@ -33,7 +33,7 @@ const NavLink = styled.li`
   margin-left: 1rem;
 `;
 
-export function Navbar() {
+export function NavBar() {
   return (
     <NavContainer>
       <Logo>My Website</Logo>
