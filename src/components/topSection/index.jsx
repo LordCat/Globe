@@ -7,13 +7,14 @@ import { Home } from "../../pages/home";
 import { About } from "../../pages/about";
 
 const TopSectionContainer = styled.div`
+  z-index: 100;
   position: absolute;
   width: 100%;
   height: 100%;
   background-color: #1756dd32;
   display: flex;
   flex-direction: column;
-  justify-content space-between;
+  justify-content: space-between;
 `;
 
 const ContentContainer = styled.div`
@@ -67,15 +68,6 @@ const Paragraph = styled.p`
 export function TopSection() {
   return (
     <TopSectionContainer>
-      <BrowserRouter>
-        <NavBar />
-      <MainBar>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-          </Routes>
-      </MainBar>
-      </BrowserRouter>
     <SideBar>
       <Logo>Welcome to my Website</Logo>
       <Paragraph>

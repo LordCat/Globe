@@ -3,8 +3,8 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 const NavContainer = styled.nav`
-  width: 100%;
-  position: relative;
+  width: 91%;
+  position: absolute;
   background-color: Black;
   color: #fff;
   display: flex;
@@ -18,6 +18,7 @@ const NavContainer = styled.nav`
   z-index: 100;
   border: 4px solid green;
   border-radius: 10px;
+  top: 0;
 `;
 
 const Logo = styled.h1`

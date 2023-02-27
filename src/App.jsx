@@ -5,9 +5,15 @@ import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
 import { Earth } from "./components/earth";
 import { TopSection } from "./components/topSection";
+import { BrowserRouter,Routes, Route} from "react-router-dom";
+import { NavBar } from "./components/NavBar/NavBar";
+import { Home } from "./pages/home";
+import { About } from "./pages/about";
+import { SideBar } from "./pages/sidebar";
 
 
 const CanvasContainer = styled.div`
+  position: absolute;
   width: 100%;
   height: 100%;
 `;
@@ -15,12 +21,24 @@ const CanvasContainer = styled.div`
 function App() {
   return (
     <CanvasContainer>
-        <TopSection />  
-      <Canvas frames={6}>
+
+      <BrowserRouter>
+
+        <NavBar />
+        <SideBar />
+
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+          </Routes>
+
+          <Canvas frames={6}>
         <Suspense fallback={null}>
           <Earth />
         </Suspense>
       </Canvas>
+      
+      </BrowserRouter>
 
     </CanvasContainer>
   );
