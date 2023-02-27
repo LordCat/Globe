@@ -16,7 +16,7 @@ function App() {
   return (
     <CanvasContainer>
         <TopSection />  
-      <Canvas frames={30}>
+      <Canvas frames={6}>
         <Suspense fallback={null}>
           <Earth />
         </Suspense>
