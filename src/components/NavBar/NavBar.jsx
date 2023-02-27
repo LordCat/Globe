@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 
 const NavContainer = styled.nav`
   position: relative;
-  background-color: Black;
   color: #fff;
   display: flex;
   justify-content: space-between;
