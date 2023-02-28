@@ -19,6 +19,7 @@ const NavContainer = styled.nav`
   border: 4px solid green;
   border-radius: 10px;
   top: 0;
+  color: green;
 `;
 
 const Logo = styled.h1`

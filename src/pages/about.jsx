@@ -3,13 +3,18 @@ import styled from "styled-components";
 
 const AboutContainer = styled.div`
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 70%;
+  height: 80%;
   display: flex;
   flex: 1;
   flex-direction: row;
   justify-content: space-between;
   color: green;
+  border: 5px solid green;
+  border-radius: 5px;
+  z-index: 100;
+  left: 25%;
+  top: 15%;
 `;
 
 export function About() {

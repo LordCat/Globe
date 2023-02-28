@@ -18,7 +18,10 @@ const SidebarContainer = styled.div`
 export function SideBar() {
   return (
     <SidebarContainer>
-    sidebar
+        <div>
+            <h2>SideBar</h2>
+            <p>This is the SideBar page.</p>
+        </div>
     </SidebarContainer>
   )
 }
