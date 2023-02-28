@@ -4,7 +4,6 @@ import styled from "styled-components";
 import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
 import { Earth } from "./components/earth";
-import { TopSection } from "./components/topSection";
 import { BrowserRouter,Routes, Route} from "react-router-dom";
 import { NavBar } from "./components/NavBar/NavBar";
 import { Home } from "./pages/home";
@@ -16,6 +15,7 @@ const CanvasContainer = styled.div`
   position: absolute;
   width: 100%;
   height: 100%;
+  background-color: black;
 `;
 
 function App() {
@@ -32,7 +32,7 @@ function App() {
             <Route path="/about" element={<About />} />
           </Routes>
 
-          <Canvas frames={6}>
+      <Canvas frames={6}>
         <Suspense fallback={null}>
           <Earth />
         </Suspense>

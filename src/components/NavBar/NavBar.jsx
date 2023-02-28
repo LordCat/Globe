@@ -1,8 +1,16 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import Glitch from "../../fonts/Glitch.ttf";
+import { createGlobalStyle } from "styled-components";
+
+
+
+
 
 const NavContainer = styled.nav`
+
+  font-family: 'Glitch';
   width: 91%;
   position: absolute;
   background-color: Black;
@@ -20,6 +28,9 @@ const NavContainer = styled.nav`
   border-radius: 10px;
   top: 0;
   color: green;
+  background-color: black;
+  background-opacity: 0.5;
+
 `;
 
 const Logo = styled.h1`
@@ -39,7 +50,7 @@ const NavLink = styled.li`
 export function NavBar() {
   return (
     <NavContainer>
-      <Logo>My Website</Logo>
+      <Logo>KRISTIAN BALL</Logo>
       <NavLinks>
         <NavLink>
         <Link to="/">Home</Link>

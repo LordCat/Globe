@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 const SidebarContainer = styled.div`
     position: absolute;
@@ -15,13 +16,28 @@ const SidebarContainer = styled.div`
     z-index: 100;
 `;
 
+const ListStyle = styled.div`
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+`;
+
+const LinkStyle = styled.a`
+    margin: 5px 0;
+`;
+
 export function SideBar() {
   return (
     <SidebarContainer>
-        <div>
-            <h2>SideBar</h2>
-            <p>This is the SideBar page.</p>
-        </div>
+        
+
+      <ListStyle>
+          <Link href="#">Github</Link>
+          <Link href="#">LinkedIn</Link>
+          <Link href="#">Resume</Link>
+      </ListStyle>
+        
     </SidebarContainer>
   )
 }
