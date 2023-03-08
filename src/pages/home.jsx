@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import TypingText from "../components/TextAnimation/TextAnimation";
 
 const HomeContainer = styled.div`
   position: absolute;
@@ -26,9 +27,12 @@ const Paragraph = styled.p  `
 export function Home() {
   return (
     <HomeContainer>
+      <TypingText>
       <Title>
         Welcome to my Website
       </Title>
+      </TypingText>
+      <TypingText>
       <Paragraph>
         This is the first of by website. It's built using React, Three.js and I'm currently
         building the backend using Express.js and sqlite database and building the API.
@@ -38,8 +42,7 @@ export function Home() {
         Watch this space, or don't. You can do whatever you want. Why are you here? Why am I here?
         Oh god.
       </Paragraph>
-     
-    
+      </TypingText>
     </HomeContainer>
   );
 }
