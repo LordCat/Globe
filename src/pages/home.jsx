@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import ScrambleLink from "../components/ScrambleLink/ScrambleLink";
+import ScrambleLink from "../components/ScrambleLink/ScambleLink.jsx";
 
 const HomeContainer = styled.div`
   position: absolute;
@@ -39,10 +39,10 @@ const homeText = {
 export function Home() {
   return (
     <HomeContainer>
-      <Title background="#fff">
+      <Title>
         <ScrambleLink text={homeText.title} />
       </Title>
-      <Paragraph background="#fff">
+      <Paragraph>
         <ScrambleLink text={homeText.paragraph} />
       </Paragraph>
     </HomeContainer>
