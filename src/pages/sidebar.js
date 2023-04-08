@@ -33,7 +33,7 @@ export function SideBar() {
         
 
       <ListStyle>
-          <Link href="#">Github</Link>
+          <Link href="#"></Link>
           <Link href="#">LinkedIn</Link>
           <Link href="#">Resume</Link>
       </ListStyle>
